@@ -73,11 +73,9 @@ ll pollard(ll n){ // don't use for n = 1
     return d;
 }
 // factorize a number using pollard
-void factorize(ll n , map<ll , ll> &f)
-{
+void factorize(ll n , map<ll , ll> &f){
     if(n == 1) return;
-    if(isprime(n))
-    {
+    if(isprime(n)){
         f[n] += 1;
         return;
     }
